@@ -4,6 +4,10 @@
 // Find the onclick event in the h3 element and create a function that will italicize the contents and change the font color to cornflowerblue in the div id of 'bread'.
 
 
+function italics(){
+    bread.style.fontStyle = 'italic';
+    bread.style.color = 'cornflowerblue'; 
+}
 
 // 2. The Birth of the Internet
 // Find the onmouseover event in the h3 element and create a function that will replace the current contents in the div id of 'webby' to the following:
