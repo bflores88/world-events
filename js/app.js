@@ -31,6 +31,11 @@ function translation(){
 // 4. The Great Depression
 // Add an event listener to the h3 element id of 'hardTimes' and create a function to display the contents in the div element of 'depress'.
 
+hardTimes.addEventListener('click', dispDepr);
+
+function dispDepr(){
+    depress.style.display = 'block';
+}
 
 
 // 5. Apollo 11
