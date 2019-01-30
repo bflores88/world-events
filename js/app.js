@@ -41,7 +41,15 @@ function dispDepr(){
 // 5. Apollo 11
 // Add an event listener to the h3 element id of 'blastOff' and create a function to show and hide the contents in the div element of 'moonWalk' after clicking on Apollo 11.
 
+blastOff.addEventListener('click', dispMoon);
 
+function dispMoon(){
+    if (moonWalk.style.display = 'none'){
+        moonWalk.style.display = 'block';
+    } else {
+        moonWalk.style.display = 'none';
+    }
+}
 
 // 6. The American Civil War
 // Add an event listener to the div element id of 'freedom' and create a function to remove all instances of 'corn' in the content.
@@ -55,6 +63,12 @@ function removeCorn(){
 // 7. The Renaissance
 // Add an event listener to the div element id of 'rebirth' and create a function to remove all the lowercase and uppercase z's in the content. 
 
+rebirth.addEventListener('mouseover', noZ);
+
+function noZ(){
+    rebirth.innerHTML = rebirth.innerHTML.replace(/z/g, '');
+    rebirth.innerHTML = rebirth.innerHTML.replace(/Z/g, '');
+}
 
 
 // 8. the Gutenberg Printing Press
