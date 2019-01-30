@@ -76,7 +76,11 @@ function noZ(){
 
 var classics = ["Charlotte's Web", "War and Peace", "The Secret", "How to Win Friends and Influence People", "Good to Great", "The Lean Startup", "The Odyssey", "Essentialism"];
 
+showBooks.addEventListener('click', ranBook);
 
+function ranBook(){
+    mustRead.innerHTML = classics[Math.floor(Math.random()*classics.length)]
+}
 
 // 9. World War II
 // Add an event listener to the image element and create a function that will toggle between images when hovering (mouseover) on the image.
