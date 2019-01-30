@@ -104,7 +104,13 @@ function newImage(){
 // 10. The Industrial Revolution
 // Add an event listener to the h3 element and create a function that will reverse the contents in the div element id of 'gameChanger'
 
+var thisElement = document.getElementsByTagName('h3');
 
+thisElement[9].addEventListener('mouseover', reverseThis);
+
+function reverseThis(){
+    gameChanger.innerHTML = gameChanger.innerHTML.split("").reverse().join("");
+}
 
 // Final Boss
 // Add event listeners for the thumbs up and thumbs down images that will count the number of times the thumb has been clicked on. 
