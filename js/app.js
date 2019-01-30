@@ -115,3 +115,27 @@ function reverseThis(){
 // Final Boss
 // Add event listeners for the thumbs up and thumbs down images that will count the number of times the thumb has been clicked on. 
 
+var buttonUp = document.getElementsByClassName('fas fa-thumbs-up');
+
+for (var i=0; i<buttonUp.length; i++){
+    buttonUp[i].addEventListener('click', thumbUp);
+}
+
+function thumbUp(){
+    var moreLikes = this.querySelectorAll('.up')[0];
+    moreLikes.innerHTML ++;
+    
+}
+
+var buttonDown = document.getElementsByClassName('fas fa-thumbs-down');
+
+for (var i=0; i<buttonDown.length; i++){
+    buttonDown[i].addEventListener('click', thumbDown);
+}
+
+function thumbDown(){
+    var moreLikes = this.querySelectorAll('.down')[0];
+    moreLikes.innerHTML --;
+    
+}
+
